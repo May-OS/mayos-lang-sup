@@ -1,0 +1,25 @@
+{
+  "name": "mayos-lang-sup",
+  "displayName": "MayOS Language Support",
+  "description": "the extension make the support for MayOS",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "aes",
+      "aliases": ["MayOS Script", "aes"],
+      "extensions": [".aes",".aes",".ae",".aeold",".aes2",".aess2",".ae2"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "aes",
+      "scopeName": "source.aes",
+      "path": "./syntaxes/aes.tmLanguage.json"
+    }]
+  }
+}
